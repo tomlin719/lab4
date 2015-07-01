@@ -1,0 +1,18 @@
+A:
+0000000000400624 T _Z7averagePdRd
+0000000000400652 T _Z7averageif
+why:
+因為此為function overloading因此compiler在
+compile的過程中會自動給兩個function不同的編碼
+以作為在日後使用的區別
+
+B:
+output:
+1 8
+4 8
+4 8
+8 8
+why:
+第一行的四個分別是char, int, float, double
+他們的size分別為1, 4, 4, 8
+而第二行全都是pointer,pointer的size為8
